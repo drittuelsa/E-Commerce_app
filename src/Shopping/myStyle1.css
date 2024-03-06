@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.link{
+    text-decoration: none;
+    margin-left: 2px;
+    color: white;
+}
+.header-top-stripe{
+    background-color: rgb(4, 62, 4);
+    /* width: 100%; */
+}
+.size{
+    font-size: x-small;
+}
+
+.account{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   margin-left: 10px;
+}
+.footer{
+    background-color: rgb(4, 62, 4);
+    color: white;
+    width: 100%;
+}
+.image{
+    background-image: url(image.jpg);
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+}
+.heading1{
+    color: rgb(4, 62, 4);
+    text-align: left;
+    padding-top: 30%;
+    margin-left: 15%;
+}
+.button{
+    background-color:rgb(4, 62, 4) ;
+    color: white;
+    margin-left: 7%;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    
+}
+
+.card{
+    width: 15rem;
+    margin: auto;
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter, Route, Routes} from "react-router-dom";
+import {Provider} from "react-redux";
+
+import { NavBar} from "./Shopping/NavBar";
+import { Home } from "./Shopping/Home";
+import { Cart } from "./Shopping/Cart";
+import { StoreSet } from "./Shopping/store";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+  <Provider store={StoreSet}>
+   <HashRouter>
+   <Routes>
+    <Route path="/" element={<NavBar/>}>
+    <Route index element={<Home/>}/>
+    <Route path ="cart/:id" element={<Cart/>}/>
+    </Route>
+   </Routes>
+   </HashRouter>
+   </Provider>
     </div>
   );
 }
